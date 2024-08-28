@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    color: #fff;
+    width: 100%;
+}
+
+
+
+/* home designs */
+
+.home {
+    background: linear-gradient(
+        rgba(0,0,0, .5),
+        rgba(0,0,0, .5)
+    ),url(./images/jason-leung-poI7DelFiVA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 65vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+.navbar nav ul li {
+    list-style-type: none;
+    letter-spacing: 1px;
+}
+.navbar nav ul a  {
+    text-decoration: none;
+    color: #FFF;
+    padding: .7em;
+    transition: .3s all;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.navbar nav ul a:hover {
+    background-color: #99627A;
+}
+.logo h4{
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+}
+label {
+    display: none;
+}
+.main {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+}
+.top {
+    padding-bottom: 1rem;
+}
+.main-title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    padding-block: 1rem;
+}
+.bottom {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-block-start: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+.reservation {
+    border: 1px solid #fff;
+    padding-inline: 1em;
+    transition: .3s all;
+}
+.reservation:hover {
+    background-color: #f08080;
+}
+
+/* our story section */
+.our-story {
+    min-height: 100vh;
+    padding: 1rem;
+    color: #111;
+}
+.our-story .title h4 {
+    padding-block: 1rem;
+    font-size: 2.3rem;
+}
+.our-story .title p{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.our-story .title {
+    padding-block: 2rem;
+    text-align: center;
+}
+.story-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+}
+.childs {
+    padding: .8rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0, .3);
+    padding-block: 2rem;
+    border-radius: 8px;
+    padding-inline: 2rem;
+}
+.childs div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.childs div i {
+    border-radius: 70px;
+    background-color: #643843;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    font-size: 1.3em;
+    color: #ffff;
+    padding-top: 15px;
+}
+.childs div h4 {
+    font-size: 1.2rem;
+}
+.content .second {
+padding-block: 1rem;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-block: 2rem;
+    padding-inline: 2rem
+}
+.pics-pics {
+    max-width: 450px;
+    border-radius: 10px;
+    height: 300px;
+}
+
+/* footer section */
+
+footer, .signature-menu {
+    background-color: #2C3333;
+    color: #fff;
+}
+.team {
+    min-height: 100vh;
+    color: #111;
+}
+.team .title {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 1rem;
+
+}
+.team .title h4 {
+    font-size: 2rem;
+}
+.team .title p{
+    max-width: 50%;
+}
+.signature-menu{
+    padding-block: 2rem;
+}
+.signature-pics {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-bottom: 1rem;
+}
+.gray {
+color: #aaa;
+}
+.first h4 {
+font-size: 2rem;
+padding-bottom: 1rem;
+}
+.view {
+margin-top: 1rem;
+padding: .5rem 1rem;
+outline: none;
+border: 2px solid #fff;
+font-size: 1em;
+cursor: pointer;
+border-radius: 10px;
+background-color: #2C3333;
+color: #fff;
+}
+.chef-pics {
+    max-width: 450px;
+    height: 400px;
+    
+}
+
+.chefs {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .chefs div {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.chefs div h4 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.chefs .iconss {
+    display: flex;
+    gap: 1rem;
+    color: #aaa;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.content {
+    padding-block: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.first, .second {
+    text-align: center;
+    max-width: 350px;
+    line-height: 2rem;
+}
+.icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-block: 2rem;
+}
+.boxeses {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 300px;
+    height: 250px;
+    padding-block: 1.5em;
+    padding-inline: 1rem;
+}
+.boxeses p {
+    max-width:250px;
+}
+.boxeses a {
+    text-decoration: none;
+    color: #fff;
+}
+.resrb {
+    padding: .5rem 1rem;
+    outline: none;
+    background-color: #b05353;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    max-width: 180px;
+}
+.footer-content hr {
+    margin-block: 1.5rem;
+    color: #fff;
+}
+.credits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1em;
+    padding-block: 2.5rem;
+}
+
+
+@media (max-width:975px){
+   
+
+    /* home design */
+    .main {
+        padding-top: 9rem;
+    }
+    nav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 180px;
+        height: fit-content;
+        padding: 1rem 1.3rem;
+        background-color: #643843;
+        visibility: none;
+        opacity: 0;
+        border-radius: 10px;
+        transition: .3s ease;
+    }
+    label {
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+        padding: 5px 10px;
+    }
+
+    nav label {
+        text-align: left;
+        font-size: 1.3rem;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 1.5rem;
+    }
+
+    input:checked ~ nav {
+        visibility: visible;
+        opacity: 1;
+    }
+    .main-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding-block: 2rem;
+   
+  }
+}
+@media(max-width:647px) {
+    .team .title {
+        display: flex;
+        flex-direction: column;
+    }
+    .team .title p {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+    
+}
+
+@media (max-width:470px){
+    .pics-pics {
+        max-width: 350px;
+        height: 300px;
+    }
+    .childs {
+        padding-inline: .5rem;
+    }
+    .team .title h4 {
+    text-align: center;
+    }
+}
+@media (max-width:360px){
+    .pics-pics {
+        max-width: 300px;
+        height: 250px;
+    }
+}

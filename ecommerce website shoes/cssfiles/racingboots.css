@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: #111;
+    background-color: #F9F5F6;
+}
+.searchIcon {
+    color: #fff;
+    cursor: pointer;
+}
+.img-section img {
+    width: 85%;
+    height: 85%;
+}
+/* .homepage {
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    height: 95vh;
+} */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+    background: #0c0116;
+}
+label {
+    display: none;
+}
+nav .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+   
+}
+nav .navbar li {
+    list-style: none;
+}
+nav .navbar li a {
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px;
+    transition: .3s all;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav .navbar li a:hover {
+    background-color: #FDCEDF;
+    color: #111;
+}
+.logo h4 {
+    font-size: 2rem;  
+    color: #fff;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+.title {
+    padding-block: 3rem;
+    background-color: #db5660;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* racing boots */
+.racingBoots .title3 h4 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.racingBoots .title3 p {
+    font-size: 1.1em;
+}
+
+.racingBoots .title3 {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-block: 3rem;
+    padding-inline: 1rem;
+}
+.boots-pic {
+    max-width: 100%;
+    height: auto;
+}
+.item-flex {
+    padding-block: 2rem;
+    margin-block: 2rem;
+    background-color: #d1cece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.text-side {
+    text-align: center;
+}
+.text-side .sale, .text-side h4 span {
+    color: #d34f80;
+    font-size: 1.8em;
+}
+.text-side h3, .text-side h4 {
+    font-size: 1.8em;
+}
+.text-side .sale {
+    font-size: 2.1rem;
+}
+.seeMore {
+    font-size: 1.2em;
+}
+
+.see-more {
+    display: grid;
+    place-content: center;
+
+}
+.seeMore {
+    padding: .7rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    background-color: #f26f9f;
+    color: #fff;
+    transition: .3s all;
+    cursor: pointer;
+
+}
+.seeMore:hover {
+    background-color: #d34f80;
+}
+
+
+
+/* footer section */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding-block: 2.5rem;
+}
+.main-content-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 3rem;
+    place-content: center;
+}
+.names, .company, .header-list {
+    max-width: 350px;
+    padding-inline: 1rem;
+    text-align: center;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+.header-list .navbar li {
+    list-style: none;
+}
+.header-list .navbar li  a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.names h4 {
+    font-size: 2rem;
+}
+.names h4  span {
+    color: #f26f9f;
+}
+.company {
+    line-height: 2rem;
+    font-size: 1.1em;
+    color: #f26f9f;
+}
+.header-list .navbar .icons {
+    padding-top: 1rem;
+}
+
+.credits {
+    padding-block: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #f26f9f;
+    text-align: center;
+}
+
+@media(max-width:870px){
+    
+    .item-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+@media(max-width:920px) {
+    nav{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: #f26f9f;
+        color: #111;
+        display: none;
+        padding-block: .5rem;
+    }
+    nav .navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    label {
+        display: block;
+        text-align: left;
+        font-size: 1.3em;
+        padding-left: 10px;
+        color: #fff;
+    }
+    input:checked ~ nav {
+        display: block;
+    }
+    .homepage header {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .homepage-content {
+    padding-inline: 1rem;
+    }
+
+    
+}
+@media(max-width:690px) {
+    .homepage-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 4rem;
+    }
+    .homepage {
+        height: fit-content;
+    }
+    .title, .racingBoots .title3 {
+        text-align: center;
+    }
+}
+@media(max-width:390px) {
+    .homepage-content .title h4 {
+        font-size: 2.5rem;
+    }
+    .logo h4 {
+        font-size: 1.8rem;
+    }
+}

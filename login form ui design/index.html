@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
+<body>
+    <main>
+        <form>
+            <h3 class="title">
+                SIGN UP NOW <i class="fa-solid fa-user"></i>
+            </h3>
+            <div class="inputs">
+                <input type="text" class="field" placeholder="Name" required>
+                <input type="text" class="field" placeholder="Last Name" required>
+                <input type="email" class="field" placeholder="Email" required>
+                <input type="password" class="field" placeholder="Password" required>
+                <button> Sign up</button>
+            </div>
+            <p> Lemuel_Dev || 2023</p>
+        </form>
+    </main>
+
+</body>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        min-height: 100vh;
+        align-items: center;
+        place-content: center;
+        display: grid;
+        background-color: #edc293;
+
+    }
+    form h3 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+    form {
+        text-align: center;
+        width: 300px;
+        height: 450px;
+        padding-inline: 1rem;
+        padding-block: 1.6rem;
+        outline: none;
+        border-radius: 18px;
+        background: #ecd0af;
+        box-shadow: 5px 10px 10px rgba(0,0,0, .5);
+    }
+
+    .inputs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
+        gap: 1rem;
+        padding-inline: 1.5rem;
+    }
+    .field {
+        padding: .5rem 1rem;
+        width: 100%;
+        font-size: .8rem;
+        letter-spacing: 1.5px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #111;
+    }
+   
+    .field:focus {
+        border: 2px solid #84c2d6;
+    }
+    form p {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+        padding-block: 1rem;
+    }
+
+        
+                 
+        button {
+            background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%);
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            letter-spacing: 1.5px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #e3d1bd;
+            border-radius: 10px;
+            display: block;
+          }
+
+          button:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          
+         
+    }
+</style>
+</html>

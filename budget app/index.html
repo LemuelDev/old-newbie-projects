@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="budget-app">
+        <div class="wrapper">
+            <div class="budget-container">
+                    <h3>Budget</h3>
+                    <p> Enter your Budget:</p>
+                    <input type="number" class="field" placeholder="Enter Budget" id="budget">
+                    <button class="budget-button" id="budgetbtn">
+                        Set Budget
+                    </button>
+                </div>
+
+                <div class="expenses-container">
+                    <h3>Expenses</h3>
+                    <input type="text" class="field" placeholder="Enter Item Here" id="expensesName">
+                    <input type="number" class="field" placeholder="Amount" id="amount">
+                    <button class="budget-button" id="amountbtn">
+                        Check Amount
+                    </button>
+                </div>
+            </div>
+            <div class="total-expenses">
+                <div class="total-wrapper">
+                    <div>
+                        <h5>Total Amount</h5>
+                        <p id="budgetamount"> 0</p>
+                    </div>
+                    <div>
+                        <h5>Expenses</h5>
+                        <p id="amountExpenses"> 0</p>
+                    </div>
+                    <div>
+                        <h5>Balance</h5>
+                        <p id="balance"> 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expenses-list">
+                <h3>Expenses-List</h3>
+                <div class="list-container" id="list"></div>
+                <div class="list-container" id="list"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

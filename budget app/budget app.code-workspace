@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../100-days-of-javascript-e10fa0dd0895b687ef7a03d3b2b3d53597190858/Day #18 - Budget App"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "budget app"
+	}
+}
